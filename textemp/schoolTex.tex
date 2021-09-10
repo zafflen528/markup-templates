@@ -1,0 +1,49 @@
+% xelatex
+%
+%
+%
+%
+
+
+\documentclass[12pt]{article}
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage[backend=biber]{biblatex}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage[indonesian]{babel}
+\usepackage{indentfirst}
+
+\addbibresource{$HOME/Documents/Templates/ref.bib}% XXX
+
+\let\oldhref\href
+\renewcommand{\href}[3][blue]{\oldhref{#2}{\color{#1}{#3}}}
+
+\geometry{
+    a4paper,
+    top=40mm,
+    right=30mm,
+    bottom=30mm,
+    left=30mm
+}
+
+\setmainfont{Times New Roman}
+\title{Title}
+\author{author}
+\date{}
+\pagenumbering{gobble}
+
+%\setstretch{1.15} if other than 1.5 line spacing
+
+
+\onehalfspacing
+
+\begin{document}
+
+
+\maketitle
+
+\end{document}
